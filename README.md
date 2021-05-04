@@ -11,8 +11,6 @@ https://group13-final-inst377sp2021.herokuapp.com
 * MacBook Pro 11.3
 
 # Links
-* [User Manual](https://scheduleofpt.herokuapp.com/documentation.html)
-
 * [Developer Manual](#developer-manual)
 
 ###  developer-manual 
@@ -56,11 +54,7 @@ The are no prewritten tests in the source repository, but you can use Cypress to
 
 ## Bugs:
 
-* There may be null values in the course and professor reviews data that may need to be handled.
+* 
 
 ## Future Development:
-* Handle null values in course and professor reviews data.
-* Adding data for more semesters; Spring 2021.
-* Diplaying average GPA in course details by professor.
-* Displaying average professor rating in professor reviews search.
 * Adding more ways to filter courses.
