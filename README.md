@@ -1,4 +1,4 @@
-# Airbnb Listing in Chicago
+# Airbnb Listings in Chicago
 ## Description
 
 When a member of the public wants to view data on Airbnb reservations in Chicago, they are often unable to view analyses of these data without conducting those analyses themselves. To solve this issue, we created a website that presents data and charts on past Airbnb reservations in Chicago. This website is not intended for Airbnb employees or hosts to use, as they have access to internal tools that likely exceed the capabilities of our website. By providing a public portal for these data, we hope to give residents of Chicago a clearer picture of Airbnb reservations in their city.
@@ -7,12 +7,16 @@ When a member of the public wants to view data on Airbnb reservations in Chicago
 https://group13-final-inst377sp2021.herokuapp.com
 
 ## Target Broswers
-* Iphone 11
-* Macbook Pro 11.3
+* iPhone 11
+* MacBook Pro 11.3
 
 # Links
+<<<<<<< HEAD
 * [User manual](https://scheduleofpt.herokuapp.com/documentation.html)
 * <a href="#developer-manual" >Developer Manual</a>
+=======
+* <a href="developer-manual" >Developer Manual</a>
+>>>>>>> ef148998f97fff33c8241f87f24c0ea5bac2a8bd
 
 ### <h4 id="developer-manual"> Developer Manual </h4>
 
