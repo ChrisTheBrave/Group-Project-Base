@@ -11,7 +11,7 @@ https://group13-final-inst377sp2021.herokuapp.com
 * MacBook Pro 11.3
 
 # Links
-[User Manual] (https://scheduleofpt.herokuapp.com/documentation.html)
+[User Manual](https://scheduleofpt.herokuapp.com/documentation.html)
 [Developer Manual](#developer-manual)
 
 ###  developer-manual 
