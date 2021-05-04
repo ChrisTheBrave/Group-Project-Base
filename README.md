@@ -11,14 +11,10 @@ https://group13-final-inst377sp2021.herokuapp.com
 * MacBook Pro 11.3
 
 # Links
-<<<<<<< HEAD
-* [User manual](https://scheduleofpt.herokuapp.com/documentation.html)
-* <a href="#developer-manual" >Developer Manual</a>
-=======
-* <a href="developer-manual" >Developer Manual</a>
->>>>>>> ef148998f97fff33c8241f87f24c0ea5bac2a8bd
+[User Manual] (https://scheduleofpt.herokuapp.com/documentation.html)
+[Developer Manual](#developer-manual)
 
-### <h4 id="developer-manual"> Developer Manual </h4>
+###  developer-manual 
 
 
 ##  How to install application and all dependencies
