@@ -37,17 +37,17 @@ The are no prewritten tests in the source repository, but you can use Cypress to
 
 ## Server application APIs
 
-/api - API route for course grades and GPA data.
+/api - API route for Airbnb listings and reservation
 
 * GET - Logs to console response query from URL. returns response 'Got a GET     request from /api'.
 
-* POST - obtains course name from request body to fetch url. fetch data json from PlanetTerp grades API and returns JSON response.
+* POST - obtains listings from request body to fetch url. fetch data json from listings in chicago API and returns JSON response.
 * PUT - returns response 'Got a PUT request at /api'.
 
-/profapi - API route for professor reviews data.
+/profapi - API route for Airbnb reseravation reviews data.
 
 * GET - Logs to console response query from URL. returns response 'Got a GET request from /api'.
-* POST - obtains professor name from request body to fetch url. fetch data json from PlanetTerp professors API and returns JSON response.
+* POST - obtains past data from Airbnb reservation from request body to fetch url. fetch data json from Airbnb reviews API and returns JSON response.
 * PUT - returns response 'Got a PUT request at /api'.
 
 ## Known Bugs and Future Development
@@ -57,4 +57,4 @@ The are no prewritten tests in the source repository, but you can use Cypress to
 * 
 
 ## Future Development:
-* Adding more ways to filter courses.
+* 
