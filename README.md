@@ -45,7 +45,7 @@ The are no prewritten tests in the source repository, but you can use Cypress to
 * POST - obtains AirBnb reviews from request body to fetch url. fetch data json from past listings in Chicago API and returns JSON response.
 * PUT - returns response 'Got a PUT request at /api'.
 
-/profapi - API route for Airbnb reseravation reviews data.
+/profapi - API route for AirBnb reseravation reviews data.
 
 * GET - Logs to console response query from URL. returns response 'Got a GET request from /api'.
 * POST - obtains past data from Airbnb reservation from request body to fetch url. fetch data json from Airbnb listings in Chicago reviews API and returns JSON response.
@@ -55,7 +55,7 @@ The are no prewritten tests in the source repository, but you can use Cypress to
 
 ## Bugs:
 
-* 
+* There might be null values in the AirBNB reviews data that might need to be solved
 
 ## Future Development:
 * 
