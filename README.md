@@ -55,7 +55,7 @@ The are no prewritten tests in the source repository, but you can use Cypress to
 
 ## Bugs:
 
-* There might be null values in the AirBNB reviews data that might need to be solved
+* There might be null values in the AirBNB reviews data that might need to be solved.
 
 ## Future Development:
 * 
