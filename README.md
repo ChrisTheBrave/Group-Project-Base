@@ -61,4 +61,4 @@ The are no prewritten tests in the source repository, but you can use Cypress to
 *  We need to solve null values in Airbnb reviews data.
 * Adding data for more cities in America; Newyork, Los Angles etc.
 * Adding more ways to filter reviews.
-* Displaying average review in chicago listings made in Chicago.
+* Displaying average review in the listings made in Chicago.
