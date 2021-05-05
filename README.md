@@ -58,4 +58,7 @@ The are no prewritten tests in the source repository, but you can use Cypress to
 * There might be null values in the AirBNB reviews data that might need to be solved.
 
 ## Future Development:
-* 
+*  We need to solve null values in AirBnB reviews data.
+* Adding data for more cities in America; Newyork, Los Angles etc
+* Adding more ways to filter reviews
+* Displaying average review in chicago listings made in Chicago
