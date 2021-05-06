@@ -4,7 +4,7 @@ div.columns {
     padding-right: 60px;
 }
 
-div.rows{
+div.rows, .flex-outer label{
     display: flex;
     flex-direction: column;
 }
@@ -18,43 +18,43 @@ h1.column.title.has-text-centered.is-size-1 {
     color: black;
 }
 
-div.column.is-two-thirds, div.column.is-one-fifth {
+h1.level-item {
+    color:black;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+div.column.is-two-thirds, div.column.is-one-fifth, div.column.is-four-fifths {
     background-color: grey;
 }
+
+/* .columns :not(div.column.is-one-fifth) {
+    height: 500px;
+} */
 
 p.menu-label {
     color: black;
     font-weight: bold;
     font-size: x-large;
 }
-/* 
-a.categorical {
-    color: black;
-    font-weight: bold;
-    font-size: large;
-} */
 
-.columns input {
+.rows input {
     width: 200px;
 }
 
-a.categorical, a.create-listing, a.contact-us, a.about {
+.flex-outer input{
+    width: 400px;
+}
+
+label + input, p + input , label + input + button{
+    margin-left: 10px;
+}
+
+a.home, a.categorical, a.create-listing, a.contact-us, a.about {
     color: black;
     font-weight: bold;
     font-size: large;
 }
-
-/* a.contact-us {
-    color: black;
-    font-weight: bold;
-    font-size: large;
-}
-
-a.about {
-    color: black;
-    font-weight: bold;
-    font-size: large;
-} */
 
 label.label.search {
     color: black;
@@ -73,4 +73,5 @@ p.thick, input, li{
 
 body > * {
     padding: 1%;
+    margin: 0;
   }
