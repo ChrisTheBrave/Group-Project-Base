@@ -27,24 +27,24 @@ p.menu-label {
     font-weight: bold;
     font-size: x-large;
 }
-
+/* 
 a.categorical {
     color: black;
     font-weight: bold;
     font-size: large;
-}
+} */
 
 .columns input {
     width: 200px;
 }
 
-a.create-listing {
+a.categorical, a.create-listing, a.contact-us, a.about {
     color: black;
     font-weight: bold;
     font-size: large;
 }
 
-a.contact-us {
+/* a.contact-us {
     color: black;
     font-weight: bold;
     font-size: large;
@@ -54,7 +54,7 @@ a.about {
     color: black;
     font-weight: bold;
     font-size: large;
-}
+} */
 
 label.label.search {
     color: black;

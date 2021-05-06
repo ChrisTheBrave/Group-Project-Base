@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>AirBnB Database</title>
+      <link href="style.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <!-- Categorical Search (Surface Book - 2) -->
+      <div class = "tile is-vertical is-11">
+        <div class = "columns">
+          <div class="column filler"></div>
+          <div class="column is-one-third">
+            <div class="rows">
+              <div class="level is-mobile">
+                <p>Room Type</p>
+                <input type="text" class="input" name="search" id="search" placeholder="Enter search terms">
+              </div>
+              <div class="level is-mobile"> 
+                <p>Bathrooms</p>
+                <input type="text" class="input" name="search" id="search" placeholder="Enter search terms">
+              </div>
+              <div class="level is-mobile"> 
+                <p>Number of Beds</p>
+                <input type="text" class="input" name="search" id="search" placeholder="Enter search terms">
+              </div>
+            </div>
+          </div>
+            <!-- <div class="column filler"></div> -->
+            <div class="column is-one-third">
+              <div class="rows">
+                <div class="level is-mobile"> 
+                  <p>Property Type</p>
+                  <input type="text" class="input" name="search" id="search" placeholder="Enter search terms">
+                </div>
+                <div class="level is-mobile"> 
+                  <p>Bedrooms</p>
+                  <input type="text" class="input" name="search" id="search" placeholder="Enter search terms">
+                </div>
+                <div class="level is-mobile"> 
+                  <p>Price</p>
+                  <input type="text" class="input" name="search" id="search" placeholder="Enter search terms">
+                </div>
+              </div>
+            </div>
+          <div class="column filler"></div>
+          <div class="column is-one-fifth">
+            <aside class="menu">
+                <p class="menu-label">MENU</p>
+                <ul class="menu-list">
+                  <li><a href="index.html">Home Page</a></li>
+                  <li><a href="categorical.html">Categorical Search</a></li>
+                  <li><a href = "listing.html">Create A Listing</a></li>
+                  <li><a href = "about.html" class="about">About Page</a></li>
+                </ul>
+            </aside>
+          </div>
+        </div>
+        <div class="card">
+          <ul class="card-content is-centered" id="search-results"></ul>
+        </div>
+      </div>
+    <div class = "box">
+      <table class="table table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+      <thead>
+          <tr>
+              <th>Calendar ID</th>
+              <th>Listing_ID</th>
+              <th>Stay_Date</th>
+          </tr>
+      </thead>
+      <tbody class="target"></tbody>
+      </table>
+    </div> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
