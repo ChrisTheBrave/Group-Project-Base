@@ -11,9 +11,9 @@ https://group13-final-inst377sp2021.herokuapp.com
 * MacBook Pro 11.3
 
 # Links
-* <a href="developer-manual" >Developer Manual</a>
+* [Developer Manual](#developer-manual)
 
-### <a name ="Developer Manual"></a> Developer Manual
+###  developer-manual 
 
 
 ##  How to install application and all dependencies
@@ -37,28 +37,28 @@ The are no prewritten tests in the source repository, but you can use Cypress to
 
 ## Server application APIs
 
-/api - API route for course grades and GPA data.
+/api - API route for Airbnb reviews and past data
+
 
 * GET - Logs to console response query from URL. returns response 'Got a GET     request from /api'.
 
-* POST - obtains course name from request body to fetch url. fetch data json from PlanetTerp grades API and returns JSON response.
+* POST - obtains Airbnb reviews from request body to fetch url. fetch data json from past listings in Chicago API and returns JSON response.
 * PUT - returns response 'Got a PUT request at /api'.
 
-/profapi - API route for professor reviews data.
+/profapi - API route for Airbnb reseravation reviews data.
 
 * GET - Logs to console response query from URL. returns response 'Got a GET request from /api'.
-* POST - obtains professor name from request body to fetch url. fetch data json from PlanetTerp professors API and returns JSON response.
+* POST - obtains past data from Airbnb reservation from request body to fetch url. fetch data json from Airbnb listings in Chicago reviews API and returns JSON response.
 * PUT - returns response 'Got a PUT request at /api'.
 
 ## Known Bugs and Future Development
 
 ## Bugs:
 
-* There may be null values in the course and professor reviews data that may need to be handled.
+* There might be null values in the AirBNB reviews data that might need to be solved.
 
 ## Future Development:
-* Handle null values in course and professor reviews data.
-* Adding data for more semesters; Spring 2021.
-* Diplaying average GPA in course details by professor.
-* Displaying average professor rating in professor reviews search.
-* Adding more ways to filter courses.
+*  We need to solve null values in Airbnb reviews data.
+* Adding data for more cities in America; Newyork, Los Angles etc.
+* Adding more ways to filter reviews.
+* Displaying average review in the listings made in Chicago.
