@@ -6,14 +6,14 @@ When a member of the public wants to view data on Airbnb reservations in Chicago
 ## Link to Website
 https://group13-final-inst377sp2021.herokuapp.com
 
-## Target Broswers
+## Target Browsers
 * iPhone 11
 * MacBook Pro 11.3
 
 # Links
-* [Developer Manual](#developer-manual)
+* [Developer Manual](#Developer-Manual)
 
-###  developer-manual 
+###  Developer-Manual 
 
 
 ##  How to install application and all dependencies
