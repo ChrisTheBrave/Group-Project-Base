@@ -9,12 +9,16 @@ div.rows{
     flex-direction: column;
 }
 
+.tile {
+    border-radius: 5px;
+}
+
 h1.column.title.has-text-centered.is-size-1 {
     background-color: grey;
     color: black;
 }
 
-div.column.is-two-thirds, div.column.is-one-fifth{
+div.column.is-two-thirds, div.column.is-one-fifth {
     background-color: grey;
 }
 
@@ -30,7 +34,7 @@ a.categorical {
     font-size: large;
 }
 
-.filters input {
+.columns input {
     width: 200px;
 }
 
