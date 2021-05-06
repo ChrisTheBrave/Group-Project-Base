@@ -3,6 +3,7 @@ let bathroomsInput = '';
 let bedsInput = '';
 let propInput = '';
 let bedroomsInput = '';
+let accommodatesInput = '';
 
 async function Records() {
   console.log('data request');
@@ -31,6 +32,8 @@ async function calendarTable() {
       filteredRecords.push(record);
     } else if (record.bedrooms === Number(bedroomsInput)) {
       filteredRecords.push(record);
+    } else if (record.accommodates === Number(accommodatesInput)) {
+      filteredRecords.push(record);
     }
   })
   const y = document.querySelector('.target');
@@ -39,8 +42,12 @@ async function calendarTable() {
     const CVar = document.createElement('tr');
     CVar.innerHTML = `
             <td>${c.property_id}</td>
+            <td>${c.property_type}</td>
             <td>${c.room_type}</td>
+            <td>${c.accommodates}</td>
             <td>${c.bathrooms}</td>
+            <td>${c.bedrooms}</td>
+            <td>${c.beds}</td>
         `;
     y.append(CVar);
   });
@@ -52,10 +59,9 @@ function getSearches() {
   bedsInput = document.getElementById('beds').value;
   propInput = document.getElementById('proptype').value;
   bedroomsInput = document.getElementById('bedrooms').value;
+  accommodatesInput = document.getElementById('accommodates').value;
   calendarTable();
 }
 
 const searchButton = document.getElementById('searchButton');
 searchButton.addEventListener('click', getSearches);
-
-window.onload = calendarTable();
