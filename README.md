@@ -37,7 +37,7 @@ The are no prewritten tests in the source repository, but you can use Cypress to
 
 ## Server application APIs
 
-/api - API welcome page with no routes
+/api - API welcome page with no routes.
 
 /api/calendar - API routes for data on the dates and times of Airbnb reservations.
 
