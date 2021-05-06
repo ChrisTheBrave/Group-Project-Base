@@ -58,7 +58,7 @@ The are no prewritten tests in the source repository, but you can use Cypress to
 * [insert bugs]
 
 ## Future Development:
-* Adding data for more cities in America; Newyork, Los Angles etc.
-* Adding more ways to filter reviews.
-* Displaying average review in the listings made in Chicago.
+* Add data for more cities; New York City, Los Angeles, etc.
+* Add more ways to filter reviews.
+* Display the average review for a range of listings as part of the search results.
 * Allow users to select from a range of charts.
