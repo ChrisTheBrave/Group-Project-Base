@@ -37,19 +37,56 @@ The are no prewritten tests in the source repository, but you can use Cypress to
 
 ## Server application APIs
 
-/api - API route for Airbnb reviews and past data
+/api - API welcome page with no routes
 
+/api/calendar - API routes for data on the dates and times of Airbnb reservations.
 
-* GET - Logs to console response query from URL. returns response 'Got a GET     request from /api'.
+* GET - Returns the data in the calendar table.
+* POST - Creates a new record in the calendar table.
+* PUT - Updates an existing record in the calendar table.
+* DELETE - Deletes a record from the calendar table.
 
-* POST - obtains Airbnb reviews from request body to fetch url. fetch data json from past listings in Chicago API and returns JSON response.
-* PUT - returns response 'Got a PUT request at /api'.
+/api/hosts - API route for data on Airbnb hosts
 
-/profapi - API route for Airbnb reseravation reviews data.
+* GET - Returns the data in the hosts table.
+* POST - Creates a new record in the hosts table.
+* PUT - Updates an existing record in the hosts table.
+* DELETE - Deletes a record from the hosts table.
 
-* GET - Logs to console response query from URL. returns response 'Got a GET request from /api'.
-* POST - obtains past data from Airbnb reservation from request body to fetch url. fetch data json from Airbnb listings in Chicago reviews API and returns JSON response.
-* PUT - returns response 'Got a PUT request at /api'.
+/api/listings - API route for data on Airbnb listings.
+
+* GET - Returns the data in the listings table.
+* POST - Creates a new record in the listings table.
+* PUT - Updates an existing record in the listings table.
+* DELETE - Deletes a record from the listings table.
+
+/api/neighborhoods - API route for data on the neighborhoods where Airbnb properties are located.
+
+* GET - Returns the data in the neighborhoods table.
+* POST - Creates a new record in the neighborhoods table.
+* PUT - Updates an existing record in the neighborhoods table.
+* DELETE - Deletes a record from the neighborhoods table.
+
+/api/properties - API route for data on Airbnb properties.
+
+* GET - Returns the data in the properties table.
+* POST - Creates a new record in the properties table.
+* PUT - Updates an existing record in the properties table.
+* DELETE - Deletes a record from the properties table.
+
+/api/reviews - API route for data on reviews from Airbnb guests.
+
+* GET - Returns the data in the reviews table.
+* POST - Creates a new record in the reviews table.
+* PUT - Updates an existing record in the reviews table.
+* DELETE - Deletes a record from the reviews table.
+
+/api/scores - API route for data on detailed review scores from Airbnb guests.
+
+* GET - Returns the data in the scores table.
+* POST - Creates a new record in the scores table.
+* PUT - Updates an existing record in the scores table.
+* DELETE - Deletes a record from the scores table.
 
 ## Known Bugs and Future Development
 
