@@ -6,14 +6,14 @@ When a member of the public wants to view data on Airbnb reservations in Chicago
 ## Link to Website
 https://group13-final-inst377sp2021.herokuapp.com
 
-## Target Broswers
+## Target Browsers
 * iPhone 11
 * MacBook Pro 11.3
 
 # Links
-* [Developer Manual](#developer-manual)
+* [Developer Manual](#Developer-Manual)
 
-###  developer-manual 
+###  Developer-Manual 
 
 
 ##  How to install application and all dependencies
@@ -37,28 +37,65 @@ The are no prewritten tests in the source repository, but you can use Cypress to
 
 ## Server application APIs
 
-/api - API route for Airbnb reviews and past data
+/api - API welcome page with no routes.
 
+/api/calendar - API routes for data on the dates and times of Airbnb reservations.
 
-* GET - Logs to console response query from URL. returns response 'Got a GET     request from /api'.
+* GET - Returns the data in the calendar table.
+* POST - Creates a new record in the calendar table.
+* PUT - Updates an existing record in the calendar table.
+* DELETE - Deletes a record from the calendar table.
 
-* POST - obtains Airbnb reviews from request body to fetch url. fetch data json from past listings in Chicago API and returns JSON response.
-* PUT - returns response 'Got a PUT request at /api'.
+/api/hosts - API route for data on Airbnb hosts
 
-/profapi - API route for Airbnb reseravation reviews data.
+* GET - Returns the data in the hosts table.
+* POST - Creates a new record in the hosts table.
+* PUT - Updates an existing record in the hosts table.
+* DELETE - Deletes a record from the hosts table.
 
-* GET - Logs to console response query from URL. returns response 'Got a GET request from /api'.
-* POST - obtains past data from Airbnb reservation from request body to fetch url. fetch data json from Airbnb listings in Chicago reviews API and returns JSON response.
-* PUT - returns response 'Got a PUT request at /api'.
+/api/listings - API route for data on Airbnb listings.
+
+* GET - Returns the data in the listings table.
+* POST - Creates a new record in the listings table.
+* PUT - Updates an existing record in the listings table.
+* DELETE - Deletes a record from the listings table.
+
+/api/neighborhoods - API route for data on the neighborhoods where Airbnb properties are located.
+
+* GET - Returns the data in the neighborhoods table.
+* POST - Creates a new record in the neighborhoods table.
+* PUT - Updates an existing record in the neighborhoods table.
+* DELETE - Deletes a record from the neighborhoods table.
+
+/api/properties - API route for data on Airbnb properties.
+
+* GET - Returns the data in the properties table.
+* POST - Creates a new record in the properties table.
+* PUT - Updates an existing record in the properties table.
+* DELETE - Deletes a record from the properties table.
+
+/api/reviews - API route for data on reviews from Airbnb guests.
+
+* GET - Returns the data in the reviews table.
+* POST - Creates a new record in the reviews table.
+* PUT - Updates an existing record in the reviews table.
+* DELETE - Deletes a record from the reviews table.
+
+/api/scores - API route for data on detailed review scores from Airbnb guests.
+
+* GET - Returns the data in the scores table.
+* POST - Creates a new record in the scores table.
+* PUT - Updates an existing record in the scores table.
+* DELETE - Deletes a record from the scores table.
 
 ## Known Bugs and Future Development
 
 ## Bugs:
 
-* There might be null values in the AirBNB reviews data that might need to be solved.
+* [insert bugs]
 
 ## Future Development:
-*  We need to solve null values in Airbnb reviews data.
-* Adding data for more cities in America; Newyork, Los Angles etc.
-* Adding more ways to filter reviews.
-* Displaying average review in the listings made in Chicago.
+* Add data for more cities; New York City, Los Angeles, etc.
+* Add more ways to filter reviews.
+* Display the average review for a range of listings as part of the search results.
+* Allow users to select from a range of charts.
