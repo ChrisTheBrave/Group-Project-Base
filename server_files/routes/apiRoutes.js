@@ -294,7 +294,7 @@ router.post('/neighborhoods', async (req, res) => {
   const neighborhoods = await db.neighborhoods.findAll();
   const currentId = (await neighborhoods.length) + 1;
   try {
-    const newEntry = await db.listings.create({
+    const newEntry = await db.neighborhoods.create({
       neighborhood_id: currentId,
       neighborhood_name: req.body.neighborhood_name
     });
