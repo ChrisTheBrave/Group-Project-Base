@@ -17,7 +17,7 @@ https://group13-final-inst377sp2021.herokuapp.com
 
 
 ##  How to install this application
-1. [Clone this repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) through Github Desktop or through your computer's command line.
+1. [Clone this repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) through Github Desktop or through your computer's command line
 2. Open the repository in your code editor of choice
 3. type npm install into the command line inside the code editor and run
 4. The application should be installed
