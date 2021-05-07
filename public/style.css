@@ -9,6 +9,10 @@ div.rows {
     flex-direction: column;
 }
 
+div.rows div.level.is-mobile p {
+    font-weight: bold;
+}
+
 .tile {
     border-radius: 5px;
 }
@@ -42,6 +46,10 @@ div.column.is-two-thirds, div.column.is-one-fifth, div.column.is-four-fifths {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+}
+
+div.columns.box.has-background-info input {
+    width: 500px;
 }
 
 .flex-outer li button {
@@ -95,13 +103,8 @@ body > * {
     padding: 1%;
     margin: 0;
 }
-/* 
-div.columns .card {
-    font-size: large;
-    background-color: gray;
-    min-width: 1200px;
-} */
 
+/* Categorical Search */
 div.columns div.column.has-text-centered {
     background-color: gray;
 }
@@ -125,4 +128,7 @@ div.columns p.sub{
     margin-left: 50px;
 }
 
-
+/* Listing */
+#appear-onclick {
+    visibility: hidden;
+}

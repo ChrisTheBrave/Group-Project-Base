@@ -15,27 +15,45 @@
         <h1 class="column title has-text-centered is-size-1">AirBnB Database</h1>
       </div>
       <div class = "columns box has-background-info">
-        <ul class="column is-two-thirds has-background-grey-light">
-            <h1 class="level-item">Create A Listing</h1> 
-            <ul class="flex-inner">
+        <ul class="column is-two-thirds has-background-grey">
+            <h1 class="column title has-text-centered">Create A Listing</h1> 
+            <ul class="flex-inner" id="disappear-onclick">
+                <li class = "level is-mobile">
+                  <label class = "label" for="name">Name</label>
+                  <input type="text" class="input" id="name" name = "listing" placeholder="Enter your name">
+                </li>
+                <li class = "level is-mobile">
+                  <label class = "label" for="number of bedrooms">Email</label>
+                  <input type="text" class="input" id="email" name = "listing" placeholder="Enter your email">
+                </li>
                 <li class = "level is-mobile">
                   <label class = "label" for="number of bedrooms">Number of Bedrooms</label>
-                  <input type="text" class="input" id="number of bedrooms" name = "checklist" placeholder="Enter details">
+                  <input type="text" class="input" id="number of bedrooms" name = "listing" placeholder="Enter details">
                 </li>
                 <li class = "level is-mobile">
                   <label class = "label" for="number of bathrooms">Number of Bathrooms</label>  
-                  <input type="text" class="input" id="number of bathrooms" name = "checklist"placeholder="Enter details">
+                  <input type="text" class="input" id="number of bathrooms" name = "listing"placeholder="Enter details">
                 </li>
                 <li class = "level is-mobile">
                   <label class = "label" for="number of beds">Number of Beds</label>  
-                  <input type="text" class="input" id="number of beds" name = "checklist"placeholder="Enter details">
+                  <input type="text" class="input" id="number of beds" name = "listing"placeholder="Enter details">
                 </li>
                 <li class = "level is-mobile">
                   <label class = "label" for="neighborhood name">Neighborhood Name</label>  
-                  <input type="text" class="input" id="neighborhood name" name = "checklist"placeholder="Enter details">
+                  <input type="text" class="input" id="neighborhood name" name = "listing"placeholder="Enter details">
+                </li>
+                <li>
+                  <button type="create" name="create" id="create" class="button" onclick=changeVisibility();>Create Listing</button>
                 </li>
             </ul>
-            <button type="create" name="create" id="create" class="button">Create Listing</button>
+            <ul class="flex-inner" id="appear-onclick">
+              <h1 class="column title has-text-centered">You've created a listing!</h1>
+              <p class= "has-text-centered">Please check your email for further instructions.</p>
+              <p class= "has-text-centered"><a onclick=newListing();>Click here</a> to create another listing.</p>
+              <!-- <li>
+                <button type="create" name="create" id="create" class="button" onclick=changeVisibility()>Create Listing</button>
+              </li> -->
+          </ul>
         </ul>
         <div class="column filler"></div>
           <div class="column is-one-fifth">
