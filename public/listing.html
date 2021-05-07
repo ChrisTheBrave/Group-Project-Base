@@ -18,10 +18,10 @@
         <ul class="column is-two-thirds has-background-white">
             <h1 class="column title has-text-centered">Add a Neighborhood</h1> 
             <ul class="flex-inner" id="disappear-onclick">
-              <form class="box has-text-centered is-half" action="/api/neighborhoods" method="post">
+              <form class="box has-text-centered is-half">
                 <li class = "level is-mobile">
                   <label class = "label" for="neighborhood_name">Neighborhood Name</label>
-                  <input type="text" class="input" name = "neighborhood_name" placeholder="Enter a neighborhood name">
+                  <input type="text" class="input" id = "neighborhood_name" name = "neighborhood_name" placeholder="Enter a neighborhood name">
                 </li>
                 <li>
                   <button type="submit" name="create" id="create" class="button">Add Neighborhood</button>

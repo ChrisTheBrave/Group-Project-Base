@@ -3,9 +3,27 @@ function changeVisibility() {
   document.getElementById('appear-onclick').style.visibility = 'visible';
 }
 
+function newListing() {
+  document.getElementById('disappear-onclick').style.visibility = 'visible';
+  document.getElementById('appear-onclick').style.visibility = 'hidden';
+}
+
+async function handleButtonCreate() {
+  const inputField = document.querySelector('#neighborhood_name');
+  const url = '/api/neighborhoods';
+  const request = await fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ neighborhood_name: inputField.value })
+  });
+}
+
 document.getElementById('create').addEventListener('click', (event) => {
+  event.preventDefault();
+  handleButtonCreate();
   changeVisibility();
-  preventDefault();
 });
 
 async function handleButtonDelete() {
