@@ -16,24 +16,26 @@ https://group13-final-inst377sp2021.herokuapp.com
 ###  Developer-Manual 
 
 
-##  How to install application and all dependencies
-1. Clone this repository through Github Desktop or through Terminal.
-2. Open repository in VSCode Terminal or Terminal application.
-3. type npm install into terminal window and run.
-4. The application should now be set to use.
+##  How to install this application
+1. [Clone this repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) through Github Desktop or through your computer's command line.
+2. Open the repository in your code editor of choice
+3. type npm install into the command line inside the code editor and run
+4. The application should be installed
 
-## How to run application on a server
-1. Open repository in VSCode terminal or Terminal application.
-2. Run npm start. There should be no errors.
-3. In a web browser, go to url: http://localhost:3000/.
+## How to run this application on your local server
+1. Open the application in your code editor
+2. Open the command line inside the code editor
+3. Run npm start. There should be no errors
+4. In a web browser, navigate to http://localhost:3000/
 
-## To run tests for software
+## Running Cypress tests on this application
 
-The are no prewritten tests in the source repository, but you can use Cypress to run your own written tests.
+This application comes with no tests, but you can use Cypress to write your own tests.
 
-1. Open two terminals and make sure you are in the main project directory
-2. In the first terminal, run npm start.
-3. In the second terminal run npm test.
+1. Open the application in your code editor
+2. Open two command line windows inside the code editor
+3. In the first window, run npm start
+4. In the second window, run npm test
 
 ## Server application APIs
 
