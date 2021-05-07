@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" class="has-background-info">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>AirBnB Database</title>
+      <link href="style.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="columns">
+        <h1 class="column title has-text-centered is-size-1">AirBnB Database</h1>
+    </div>  
+    <!-- Categorical Search (Surface Book - 2) -->
+    <div class="columns">
+      <div class="column has-text-centered">
+        <!-- <ul class="card-content is-centered" id="categorical-search"> -->
+        <h1 class="title">Welcome to the Categorical Search!</h1>
+        <p class="sub">Enter your search based on the following criteria.</p>
+        <ul class="main-descr">
+          <li>For Accomodates, Bathrooms, Bedrooms and Beds you can enter any number.
+            <p class="note">Note: half-baths can be referred to using .5 (Ex: 2.5). </p></li>
+          <li>For Room Type and Property Type, please indicate the following.</li>
+            <ul class="room-property">
+              <li>Room Type: Entire home/apt, Private room or Hotel room.</li>
+              <li>Property Type: apartment, condomonium, guest suite, house, loft, townhouse </li>
+            </ul>
+        </ul>
+      </div>
+    </div>
+        <div class = "columns">
+          <!-- <div class="column filler"></div> -->
+          <div class="column is-one-third has-background-white">
+            <div class="rows">
+              <div class="level is-mobile">
+                <p>Room Type</p>
+                <input type="text" class="input" name="search" id="roomtype" placeholder="Enter search terms">
+              </div>
+              <div class="level is-mobile"> 
+                <p>Bathrooms</p>
+                <input type="text" class="input" name="search" id="bathrooms" placeholder="Enter search terms">
+              </div>
+              <div class="level is-mobile"> 
+                <p>Number of Beds</p>
+                <input type="text" class="input" name="search" id="beds" placeholder="Enter search terms">
+              </div>
+            </div>
+          </div>
+            <!-- <div class="column filler"></div> -->
+            <div class="column is-one-third has-background-white">
+              <div class="rows">
+                <div class="level is-mobile"> 
+                  <p>Property Type</p>
+                  <input type="text" class="input" name="search" id="proptype" placeholder="Enter search terms">
+                </div>
+                <div class="level is-mobile"> 
+                  <p>Bedrooms</p>
+                  <input type="text" class="input" name="search" id="bedrooms" placeholder="Enter search terms">
+                </div>
+                <div class="level is-mobile"> 
+                  <p>Accommodates</p>
+                  <input type="text" class="input" name="search" id="accommodates" placeholder="Enter search terms">
+                </div>
+                <button class="button" id="searchButton">Search</button>
+              </div>
+            </div>
+          <div class="column filler"></div>
+          <div class="column is-one-fifth">
+            <aside class="menu">
+                <p class="menu-label">MENU</p>
+                <ul class="menu-list">
+                  <li><a href="index.html" class="home">Home Page</a></li>
+                  <li><a href = "listing.html" class="create-listing">Add a Neighborhood</a></li>
+                  <li><a href = "about.html" class="about">About Page</a></li>
+                </ul>
+            </aside>
+          </div>
+        </div>
+        <div class="card">
+          <ul class="card-content is-centered" id="search-results"></ul>
+          <div class = "box">
+            <table class="table table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+            <thead>
+                <tr>
+                    <th>Property ID</th>
+                    <th>Property Type</th>
+                    <th>Room Type</th>
+                    <th>Accommodates</th>
+                    <th>Bathrooms</th>
+                    <th>Bedrooms</th>
+                    <th>Beds</th>
+                </tr>
+            </thead>
+            <tbody class="target"></tbody>
+            </table>
+          </div> 
+        </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
+    <script src="categoricalscript.js"></script>
+  </body>
+</html>
