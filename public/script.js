@@ -161,8 +161,3 @@ const searchButton = document.getElementById('searchButton');
 searchButton.addEventListener('click', getSearch);
 
 window.onload = allRecords();
-
-function newListing() {
-  document.getElementById('disappear-onclick').style.visibility = 'visible';
-  document.getElementById('appear-onclick').style.visibility = 'hidden';
-}
