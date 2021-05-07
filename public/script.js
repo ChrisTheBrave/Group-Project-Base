@@ -133,16 +133,28 @@ async function allRecords() {
   chart.render();
 }
 
-async function Calendar() {
-  const apif = await fetch('/api/allrecords');
-  const recordsRequest = await fetch('/api/properties');
-  const recordsData = await recordsRequest.json();
-  return recordsData;
+async function listingsTable() {
+  const listingsRequest = await fetch(`/api/listings/${userSearch}`);
+  const listingsData = await listingsRequest.json();
+  const tableBody = document.querySelector('.target');
+  tableBody.innerHTML = '';
+  const tableData = document.createElement('tr');
+  listingsData.forEach((listing) => {
+    tableData.innerHTML = `
+    <td>${listing.listing_id}</td>
+    <td>${listing.neighborhood_id}</td>
+    <td>${listing.host_id}</td>
+    <td>${listing.listing_name}</td>
+    <td>${listing.days_avail}</td>
+    <td>${listing.price}</td>
+    `;
+    tableBody.append(tableData);
+  })
 }
 
 function getSearch() {
   userSearch = document.getElementById('recordsSearch').value;
-  allRecords();
+  listingsTable();
 }
 
 const searchButton = document.getElementById('searchButton');
