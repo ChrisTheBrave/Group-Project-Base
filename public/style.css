@@ -18,7 +18,7 @@ div.rows div.level.is-mobile p {
 }
   
 h1.column.title.has-text-centered.is-size-1, h1.column.title.has-text-centered {
-    background-color: grey;
+    background-color: white;
     color: black;
 }
 
@@ -29,7 +29,7 @@ h1.level-item, h1.title {
 }
 
 div.column.is-two-thirds, div.column.is-one-fifth, div.column.is-four-fifths {
-    background-color: grey;
+    background-color: white;
 }
 
 .container {
@@ -52,13 +52,13 @@ div.columns.box.has-background-info input {
     width: 500px;
 }
 
-.flex-outer li button {
+.flex-outer li button, .flex-inner li button, div.column button {
     margin-left: auto;
     font-weight: bold;
     padding: 8px 16px;
     border: none;
-    background:rgba(22, 21, 21, 0.548);
-    color: grey;
+    background:grey;
+    color: white;
     text-transform: uppercase;
     letter-spacing: .09em;
     border-radius: 5px;
@@ -106,7 +106,7 @@ body > * {
 
 /* Categorical Search */
 div.columns div.column.has-text-centered {
-    background-color: gray;
+    background-color: white;
 }
 
 div.columns p.sub{
