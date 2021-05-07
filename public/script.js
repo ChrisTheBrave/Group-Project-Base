@@ -149,7 +149,7 @@ async function listingsTable() {
     <td>${listing.price}</td>
     `;
     tableBody.append(tableData);
-  })
+  });
 }
 
 function getSearch() {
@@ -162,12 +162,7 @@ searchButton.addEventListener('click', getSearch);
 
 window.onload = allRecords();
 
-function changeVisibility() {
-  document.getElementById('disappear-onclick').style.visibility = 'hidden';
-  document.getElementById('appear-onclick').style.visibility = 'visible';
-}
-
 function newListing() {
   document.getElementById('disappear-onclick').style.visibility = 'visible';
-  document.getElementById('appear-onclick').style.visibility = 'hidden'; 
+  document.getElementById('appear-onclick').style.visibility = 'hidden';
 }
