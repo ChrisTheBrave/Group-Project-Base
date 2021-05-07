@@ -26,40 +26,51 @@
                 <li>
                   <button type="submit" name="create" id="create" class="button">Add Neighborhood</button>
                 </li>
+                <ul class="flex-inner" id="appear-onclick">
+                  <h1 class="column title has-text-centered">You've created a neighborhood!</h1>
+                  <p class= "has-text-centered">Please check your email for further instructions.</p>
+                  <p class= "has-text-centered"><a onclick=newListing();>Click here</a> to create another neighborhood</p>
+              </ul>
               </form>
             </ul>
-            <ul class="flex-inner" id="appear-onclick">
-              <h1 class="column title has-text-centered">You've created a neighborhood!</h1>
-              <p class= "has-text-centered">Please check your email for further instructions.</p>
-              <p class= "has-text-centered"><a onclick=newListing();>Click here</a> to create another neighborhood</p>
-              <!-- <li>
-                <button type="create" name="create" id="create" class="button" onclick=changeVisibility()>Create Listing</button>
-              </li> -->
-          </ul>
             <h1 class="column title has-text-centered">Delete a Neighborhood</h1>
-            <form class="box has-text-centered is-half">
-              <li class = "level is-mobile">
-                <label class = "label" for="neighborhood_id_delete">Neighborhood ID</label>
-                <input type="number" class="input" id = "neighborhood_id_delete" name = "neighborhood_id_delete" placeholder="Enter a neighborhood ID">
-              </li>
-              <li>
-                <button type="submit" name="delete" id="delete" class="button">Delete Neighborhood</button>
-              </li>
-            </form>
+            <ul class="flex-inner" id="disappear-onclick">
+              <form class="box has-text-centered is-half">
+                <li class = "level is-mobile">
+                  <label class = "label" for="neighborhood_id_delete">Neighborhood ID</label>
+                  <input type="number" class="input" id = "neighborhood_id_delete" name = "neighborhood_id_delete" placeholder="Enter a neighborhood ID">
+                </li>
+                <li>
+                  <button type="submit" name="delete" id="delete" class="button">Delete Neighborhood</button>
+                </li>
+                <ul class="flex-inner" id="appear-onclick">
+                  <h1 class="column title has-text-centered">You've deleted a neighborhood!</h1>
+                  <p class= "has-text-centered">Please check your email for further instructions.</p>
+                  <p class= "has-text-centered"><a onclick=newListing();>Click here</a> to delete another neighborhood</p>
+                </ul>
+              </form>
+            </ul>
             <h1 class="column title has-text-centered">Update a Neighborhood Name</h1>
-            <form class="box has-text-centered is-half">
-              <li class = "level is-mobile">
-                <label class = "label" for="neighborhood_id_update">Neighborhood ID</label>
-                <input type="number" class="input" id = "neighborhood_id_update" name = "neighborhood_id_update" placeholder="Enter a neighborhood ID">
-              </li>
-              <li class = "level is-mobile">
-                <label class = "label" for="neighborhood_name_update">Neighborhood Name</label>
-                <input type="text" class="input" name = "neighborhood_name_update" id = "neighborhood_name_update" placeholder="Enter updated neighborhood name">
-              </li>
-              <li>
-                <button type="submit" name="update" id="update" class="button">Update Neighborhood Name</button>
-              </li>
-            </form>
+            <ul class="flex-inner" id="disappear-onclick">
+              <form class="box has-text-centered is-half" id="disappear-onclick">
+                <li class = "level is-mobile">
+                  <label class = "label" for="neighborhood_id_update">Neighborhood ID</label>
+                  <input type="number" class="input" id = "neighborhood_id_update" name = "neighborhood_id_update" placeholder="Enter a neighborhood ID">
+                </li>
+                <li class = "level is-mobile">
+                  <label class = "label" for="neighborhood_name_update">Neighborhood Name</label>
+                  <input type="text" class="input" name = "neighborhood_name_update" id = "neighborhood_name_update" placeholder="Enter updated neighborhood name">
+                </li>
+                <li>
+                  <button type="submit" name="update" id="update" class="button">Update Neighborhood Name</button>
+                </li>
+                <ul class="flex-inner" id="appear-onclick">
+                  <h1 class="column title has-text-centered">You've updated a neighborhood!</h1>
+                  <p class= "has-text-centered">Please check your email for further instructions.</p>
+                  <p class= "has-text-centered"><a onclick=newListing();>Click here</a> to update another neighborhood</p>
+                </ul>
+              </form>
+            </ul>
         </ul>
         <div class="column filler"></div>
           <div class="column is-one-fifth">
