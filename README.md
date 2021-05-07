@@ -37,32 +37,14 @@ The are no prewritten tests in the source repository, but you can use Cypress to
 
 ## Server application APIs
 
-/api - API welcome page with no routes.
+/api - API welcome page with no endpoints.
 
-/api/calendar - API routes for data on the dates and times of Airbnb reservations.
+/api/listings/[listing ID] - API route for data on Airbnb listings using a specific ID.
 
-* GET - Returns the data in the calendar table.
-* POST - Creates a new record in the calendar table.
-* PUT - Updates an existing record in the calendar table.
-* DELETE - Deletes a record from the calendar table.
-
-/api/hosts - API route for data on Airbnb hosts
-
-* GET - Returns the data in the hosts table.
-* POST - Creates a new record in the hosts table.
-* PUT - Updates an existing record in the hosts table.
-* DELETE - Deletes a record from the hosts table.
-
-/api/listings - API route for data on Airbnb listings.
-
-* GET - Returns the data in the listings table.
-* POST - Creates a new record in the listings table.
-* PUT - Updates an existing record in the listings table.
-* DELETE - Deletes a record from the listings table.
+* GET - Returns the data in the listings table for the specified ID.
 
 /api/neighborhoods - API route for data on the neighborhoods where Airbnb properties are located.
 
-* GET - Returns the data in the neighborhoods table.
 * POST - Creates a new record in the neighborhoods table.
 * PUT - Updates an existing record in the neighborhoods table.
 * DELETE - Deletes a record from the neighborhoods table.
@@ -70,23 +52,6 @@ The are no prewritten tests in the source repository, but you can use Cypress to
 /api/properties - API route for data on Airbnb properties.
 
 * GET - Returns the data in the properties table.
-* POST - Creates a new record in the properties table.
-* PUT - Updates an existing record in the properties table.
-* DELETE - Deletes a record from the properties table.
-
-/api/reviews - API route for data on reviews from Airbnb guests.
-
-* GET - Returns the data in the reviews table.
-* POST - Creates a new record in the reviews table.
-* PUT - Updates an existing record in the reviews table.
-* DELETE - Deletes a record from the reviews table.
-
-/api/scores - API route for data on detailed review scores from Airbnb guests.
-
-* GET - Returns the data in the scores table.
-* POST - Creates a new record in the scores table.
-* PUT - Updates an existing record in the scores table.
-* DELETE - Deletes a record from the scores table.
 
 /api/allrecords - API route that combines data from every table.
 
