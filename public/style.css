@@ -4,7 +4,7 @@ div.columns {
     padding-right: 60px;
 }
 
-div.rows, .flex-outer label{
+div.rows {
     display: flex;
     flex-direction: column;
 }
@@ -12,7 +12,7 @@ div.rows, .flex-outer label{
 .tile {
     border-radius: 5px;
 }
-
+  
 h1.column.title.has-text-centered.is-size-1 {
     background-color: grey;
     color: black;
@@ -28,9 +28,33 @@ div.column.is-two-thirds, div.column.is-one-fifth, div.column.is-four-fifths {
     background-color: grey;
 }
 
-/* .columns :not(div.column.is-one-fifth) {
-    height: 500px;
-} */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+.container * {
+    box-sizing: border-box;
+}
+
+.flex-outer li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex-outer li button {
+    margin-left: auto;
+    font-weight: bold;
+    padding: 8px 16px;
+    border: none;
+    background:rgba(22, 21, 21, 0.548);
+    color: grey;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    border-radius: 5px;
+}
 
 p.menu-label {
     color: black;
@@ -40,10 +64,6 @@ p.menu-label {
 
 .rows input {
     width: 200px;
-}
-
-.flex-outer input{
-    width: 400px;
 }
 
 label + input, p + input , label + input + button{
