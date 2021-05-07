@@ -1,23 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="has-background-info">
     <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Airbnb Database</title>
+      <title>AirBnB Database</title>
       <link href="style.css" rel="stylesheet">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
       <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;300&display=swap" rel="stylesheet">
     </head>
   <body>
-    <p>This is our about page.</p>
-    <div class="column is-one-fifth">
-      <aside class="menu">
-          <p class="menu-label">MENU</p>
+    <div class="columns">
+      <h1 class="column title has-text-centered is-size-1">AirBnB Database</h1>
+    </div>  
+    <div class="columns">
+      <aside class="menu column is-two-thirds has-background-white">
+          <p class="menu-label">Website Description</p>
+          <p>When a member of the public wants to view data on Airbnb reservations in Chicago, they are often unable to view analyses of these data without conducting those analyses themselves. 
+              To solve this issue, we created a website that presents data and charts on past Airbnb reservations in Chicago. 
+              This website is not intended for Airbnb employees or hosts to use, as they have access to internal tools that likely exceed the capabilities of our website. 
+              By providing a public portal for these data, we hope to give residents of Chicago a clearer picture of Airbnb reservations in their city.</p>
+          <p class="menu-label">Contributors</p>
           <ul class="menu-list">
-            <li><a href = "index.html" class="index">Home Page</a></li>
+            <li>Chris Ash</li>
+            <li>Emmet Ryan</li>
+            <li>Gabby Fagbohunka</li>
+            <li>Hamid Dawodu</li>
+            <li>Naaja Jacob</li>
           </ul>
         </aside>
-      </div>
+        <div class="column filler"></div>
+        <div class="column is-one-fifth">
+          <aside class="menu">
+              <p class="menu-label">MENU</p>
+              <ul class="menu-list">
+                <li><a href="index.html" class="home">Home Page</a></li>
+                <li><a href = "categorical.html" class="categorical">Advanced Search</a></li>
+                <li><a href = "listing.html" class="create-listing">Modify a Neighborhood</a></li>
+              </ul>
+          </aside>
+        </div>
+    </div>
   </body>
 </html>

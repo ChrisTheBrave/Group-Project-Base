@@ -4,17 +4,64 @@ div.columns {
     padding-right: 60px;
 }
 
-h1.column.title.has-text-centered.is-size-1 {
-    background-color: grey;
+div.rows {
+    display: flex;
+    flex-direction: column;
+}
+
+div.rows div.level.is-mobile p {
+    font-weight: bold;
+}
+
+.tile {
+    border-radius: 5px;
+}
+  
+h1.column.title.has-text-centered.is-size-1, h1.column.title.has-text-centered {
+    background-color: white;
     color: black;
 }
 
-div.column.is-two-thirds {
-    background-color: grey;
+h1.level-item, h1.title {
+    color:black;
+    font-weight: bold;
+    font-size: x-large;
 }
 
-div.column.is-one-fifth {
-    background-color: grey;
+div.column.is-two-thirds, div.column.is-one-fifth, div.column.is-four-fifths {
+    background-color: white;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+.container * {
+    box-sizing: border-box;
+}
+
+.flex-outer li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+div.columns.box.has-background-info input {
+    width: 500px;
+}
+
+.flex-outer li button, .flex-inner li button, div.column button {
+    margin-left: auto;
+    font-weight: bold;
+    padding: 8px 16px;
+    border: none;
+    background:grey;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    border-radius: 5px;
 }
 
 p.menu-label {
@@ -23,25 +70,15 @@ p.menu-label {
     font-size: x-large;
 }
 
-a.categorical {
-    color: black;
-    font-weight: bold;
-    font-size: large;
+.rows input {
+    width: 200px;
 }
 
-a.create-listing {
-    color: black;
-    font-weight: bold;
-    font-size: large;
+label + input, p + input , label + input + button{
+    margin-left: 10px;
 }
 
-a.contact-us {
-    color: black;
-    font-weight: bold;
-    font-size: large;
-}
-
-a.about {
+a.home, a.categorical, a.create-listing, a.contact-us, a.about {
     color: black;
     font-weight: bold;
     font-size: large;
@@ -64,4 +101,34 @@ p.thick, input, li{
 
 body > * {
     padding: 1%;
-  }
+    margin: 0;
+}
+
+/* Categorical Search */
+div.columns div.column.has-text-centered {
+    background-color: white;
+}
+
+div.columns p.sub{
+    font-weight: bold;
+    color:black;
+}
+
+
+.main-descr {
+    margin-left: 20px;
+}
+
+.note {
+    font-size: medium;
+    font-style: italic;
+}
+
+.room-property {
+    margin-left: 50px;
+}
+
+/* Listing */
+#appear-onclick {
+    visibility: hidden;
+}

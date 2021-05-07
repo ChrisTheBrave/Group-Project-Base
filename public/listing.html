@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" class="has-background-info">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>AirBnB Database</title>
+      <link href="style.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <!-- Listings (Surface Book - 3) -->
+      <div class="columns">
+        <h1 class="column title has-text-centered is-size-1">AirBnB Database</h1>
+      </div>
+      <div class = "columns box has-background-info">
+        <ul class="column is-two-thirds has-background-white">
+            <h1 class="column title has-text-centered">Add a Neighborhood</h1> 
+            <ul class="flex-inner" id="disappear-onclick">
+              <form class="box has-text-centered is-half">
+                <li class = "level is-mobile">
+                  <label class = "label" for="neighborhood_name">Neighborhood Name</label>
+                  <input type="text" class="input" id = "neighborhood_name" name = "neighborhood_name" placeholder="Enter a neighborhood name">
+                </li>
+                <li>
+                  <button type="submit" name="create" id="create" class="button">Add Neighborhood</button>
+                </li>
+                <ul class="flex-inner" id="appear-onclick">
+                  <h1 class="column title has-text-centered">You've created a neighborhood!</h1>
+                  <p class= "has-text-centered">Please check your email for further instructions.</p>
+                  <p class= "has-text-centered"><a onclick=newListing();>Click here</a> to create another neighborhood</p>
+              </ul>
+              </form>
+            </ul>
+            <h1 class="column title has-text-centered">Delete a Neighborhood</h1>
+            <ul class="flex-inner" id="disappear-onclick">
+              <form class="box has-text-centered is-half">
+                <li class = "level is-mobile">
+                  <label class = "label" for="neighborhood_id_delete">Neighborhood ID</label>
+                  <input type="number" class="input" id = "neighborhood_id_delete" name = "neighborhood_id_delete" placeholder="Enter a neighborhood ID">
+                </li>
+                <li>
+                  <button type="submit" name="delete" id="delete" class="button">Delete Neighborhood</button>
+                </li>
+                <ul class="flex-inner" id="appear-onclick">
+                  <h1 class="column title has-text-centered">You've deleted a neighborhood!</h1>
+                  <p class= "has-text-centered">Please check your email for further instructions.</p>
+                  <p class= "has-text-centered"><a onclick=newListing();>Click here</a> to delete another neighborhood</p>
+                </ul>
+              </form>
+            </ul>
+            <h1 class="column title has-text-centered">Update a Neighborhood Name</h1>
+            <ul class="flex-inner" id="disappear-onclick">
+              <form class="box has-text-centered is-half" id="disappear-onclick">
+                <li class = "level is-mobile">
+                  <label class = "label" for="neighborhood_id_update">Neighborhood ID</label>
+                  <input type="number" class="input" id = "neighborhood_id_update" name = "neighborhood_id_update" placeholder="Enter a neighborhood ID">
+                </li>
+                <li class = "level is-mobile">
+                  <label class = "label" for="neighborhood_name_update">Neighborhood Name</label>
+                  <input type="text" class="input" name = "neighborhood_name_update" id = "neighborhood_name_update" placeholder="Enter updated neighborhood name">
+                </li>
+                <li>
+                  <button type="submit" name="update" id="update" class="button">Update Neighborhood Name</button>
+                </li>
+                <ul class="flex-inner" id="appear-onclick">
+                  <h1 class="column title has-text-centered">You've updated a neighborhood!</h1>
+                  <p class= "has-text-centered">Please check your email for further instructions.</p>
+                  <p class= "has-text-centered"><a onclick=newListing();>Click here</a> to update another neighborhood</p>
+                </ul>
+              </form>
+            </ul>
+        </ul>
+        <div class="column filler"></div>
+          <div class="column is-one-fifth">
+            <aside class="menu">
+                <p class="menu-label">MENU</p>
+                <ul class="menu-list">
+                  <li><a href="index.html" class="home">Home Page</a></li>
+                  <li><a href="categorical.html" class="categorical"> Advanced Search</a></li>
+                  <li><a href = "about.html" class="about">About Page</a></li>
+                </ul>
+            </aside>
+          </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
+    <script src="listingscript.js"></script>
+  </body>
+</html>

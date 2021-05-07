@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="has-background-info">
   <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,113 +14,43 @@
       <h1 class="column title has-text-centered is-size-1">AirBnB Database</h1>
     </div>
     <div class="columns">
-        <div class="column is-two-thirds">
-          <form class="search-form" action='/api' method='post'>
-            <label class="label search" for="search">Search</label>
-            <input type="text" class="input" name="search" id="search" placeholder="Enter search terms">
-            <button type="submit" name="submit" id="submit" class="button">Search</button>
-            <div class="card">
-                <ul class="card-content is-centered" id="search-results"></ul>
+        <div class="column is-four-fifths">
+          <!-- <p>Welcome to the AirBnB Database!</p> -->
+            <div class ="level is-mobile">
+              <label class="label search" for="search">Search </label>
+              <input type="text" class="input" name="search" id="recordsSearch" placeholder="Enter a listing ID">
+              <button class="button" id="searchButton">Search</button>
             </div>
-          </form>
+            <div class = "box">
+              <table class="table table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+              <thead>
+                  <tr>
+                      <th>Listing ID</th>
+                      <th>Neighborhood ID</th>
+                      <th>Host ID</th>
+                      <th>Listing Name</th>
+                      <th>Days Available</th>
+                      <th>Price</th>
+                  </tr>
+              </thead>
+              <tbody class="target"></tbody>
+              </table>
+            </div>
+            <div id="chartContainer" style="height: 370px; width: 100%;"></div>
         </div>
         <div class="column filler"></div>
         <div class="column is-one-fifth">
           <aside class="menu">
               <p class="menu-label">MENU</p>
               <ul class="menu-list">
-                <li><a class="categorical">Categorical Search</a></li>
-                <li><a class="create-listing">Create a Listing</a></li>
-                <li><a class="contact-us">Contact Us</a></li>
+                <li><a href="categorical.html" class="categorical">Advanced Search</a></li>
+                <li><a href="listing.html" class="create-listing">Modify a Neighborhood</a></li>
                 <li><a href = "about.html" class="about">About Page</a></li>
               </ul>
             </aside>
           </div>
-        </div>
-      
-        <!-- Categorical Search (Surface Book - 2) -->
-      <div class = "categorical box">
-        <div class = "filters">
-            <p>Room Type</p>
-            <input type="text" class="input" name="search" id="search" placeholder="Enter search terms">
-            <p>Bathrooms</p>
-            <input type="text" class="input" name="search" id="search" placeholder="Enter search terms">
-            <p>Number of Beds</p>
-            <input type="text" class="input" name="search" id="search" placeholder="Enter search terms">
-            <p>Property Type</p>
-            <input type="text" class="input" name="search" id="search" placeholder="Enter search terms">
-            <p>Bedrooms</p>
-            <input type="text" class="input" name="search" id="search" placeholder="Enter search terms">
-            <p>Price</p>
-            <input type="text" class="input" name="search" id="search" placeholder="Enter search terms">
-        </div>
-        <div class = "filter results"></div>
-      </div>
-
-      <!-- Listings (Surface Book - 3) -->
-      <div class = "listings box">
-        <ul class="flex-outer">
-            <p>Listing Checklist</p>
-            <ul class="flex-inner">
-                <li>
-                    <input class = "checkbox" type="checkbox" id="number of bedrooms" name = "checklist" >
-                    <label class = "label" for="number of bedrooms">Number of Bedrooms</label>
-                </li>
-                <li>
-                    <input class = "checkbox" type="checkbox" id="number of bathrooms" name = "checklist">
-                    <label class = "label" for="number of bathrooms">Number of Bathrooms</label>
-                </li>
-                <li>
-                    <input class = "checkbox" type="checkbox" id="number of beds" name = "checklist">
-                    <label class = "label" for="number of beds">Number of Beds</label>
-                </li>
-                <li>
-                    <input class = "checkbox" type="checkbox" id="neighborhood name" name = "checklist">
-                    <label class = "label" for="neighborhood name">Neighborhood Name</label>
-                </li>
-            </ul>
-        </ul>
-        <button type="create" name="create" id="create" class="button">Create Listing</button>
+        </div>  
     </div>
-    <!-- Contact Form (Surface Book - 5) -->
-    <div class = "form box">
-        <p>Contact Form</p>
-        <form action ="/api" method = "POST">
-            <ul class="flex-outer">
-              <li>
-                <label class = "label" for="name">Name</label>
-                <input class = "input" type="text" id="name" name = "name" placeholder="Enter your name here">
-              </li>
-              <li>
-                <label class = "label" for="email">Email</label>
-                <input class = "input" type="email" id="email" name = "email" placeholder="Enter your email here">
-              </li>
-              <li>
-                <label class = "label" for="phone">Phone</label>
-                <input class = "input" type="tel" id="phone" name = "phone" placeholder="Enter your phone number here">
-              </li>
-              <li>
-                <label class = "label" for="message">Message</label>
-                <textarea class = "textarea" rows="5" cols = "33" id="message" name = "message" placeholder="Enter your message here"></textarea>
-              </li>
-              <li>
-                <button class = "button" type="submit" name = "submit">Submit</button>
-              </li>
-            </ul>
-          </form>
-    </div>
-    <div class = "box">
-      <table class="table table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
-      <thead>
-          <tr>
-              <th>Calendar ID</th>
-              <th>Listing_ID</th>
-              <th>Stay_Date</th>
-          </tr>
-      </thead>
-      <tbody class="target"></tbody>
-      </table>
-    </div> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
     <script src="script.js"></script>
   </body>
