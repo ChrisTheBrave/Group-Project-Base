@@ -18,8 +18,23 @@
           <!-- <p>Welcome to the AirBnB Database!</p> -->
             <div class ="level is-mobile">
               <label class="label search" for="search">Search </label>
-              <input type="text" class="input" name="search" id="recordsSearch" placeholder="Enter search terms">
+              <input type="text" class="input" name="search" id="recordsSearch" placeholder="Enter a listing ID">
               <button class="button" id="searchButton">Search</button>
+            </div>
+            <div class = "box">
+              <table class="table table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+              <thead>
+                  <tr>
+                      <th>Listing ID</th>
+                      <th>Neighborhood ID</th>
+                      <th>Host ID</th>
+                      <th>Listing Name</th>
+                      <th>Days Available</th>
+                      <th>Price</th>
+                  </tr>
+              </thead>
+              <tbody class="target"></tbody>
+              </table>
             </div>
             <div id="chartContainer" style="height: 370px; width: 100%;"></div>
         </div>
