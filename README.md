@@ -88,11 +88,15 @@ The are no prewritten tests in the source repository, but you can use Cypress to
 * PUT - Updates an existing record in the scores table.
 * DELETE - Deletes a record from the scores table.
 
+/api/allrecords - API route that combines data from every table.
+
+* GET - Returns a combination of every table in the database.
+
 ## Known Bugs and Future Development
 
 ## Bugs:
 
-* [insert bugs]
+* The all records endpoint only includes records with a value in all columns of every table.
 
 ## Future Development:
 * Add data for more cities; New York City, Los Angeles, etc.
